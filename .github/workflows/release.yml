@@ -37,8 +37,18 @@ jobs:
         id: yarn-build
         run: yarn build
 
+      - name: pack
+        id: pack
+        run: yarn yarn:pack
+
       - name: semantic-release
         id: semantic-release
         run: node_modules/.bin/semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE }}
+
+      - name: publish
+        id: publish
+        run: yarn deploy
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
