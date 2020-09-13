@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.5...v1.0.6) (2020-09-13)
+
+
+### Bug Fixes
+
+* **ci:** order of publish steps ([e5e2103](https://github.com/adrielcodeco/vscode-formact/commit/e5e2103081107e45f8ed88d0b8d0c429a3f82862))
+
 ## [1.0.5](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.4...v1.0.5) (2020-09-13)
 
 
