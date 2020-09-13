@@ -1,5 +1,6 @@
 .github
 release
+node_modules
 .commitlintrc.js
 .cspell.json
 .eslintignore

@@ -87,7 +87,7 @@
     "test": "echo \"No test specified\" && exit 0",
     "typecheck": "ttsc -p ./",
     "validations": "yarn lint && yarn lint:markdown && yarn check:spelling && yarn typecheck && yarn test",
-    "yarn:pack": "yarn pack && yarn cpy '*.tgz' 'releases'",
+    "package": "vsce package && yarn cpy '*.vsix' 'releases'",
     "watch": "tsc -watch -p ./"
   },
   "dependencies": {
