@@ -7,8 +7,7 @@
       "@semantic-release/exec",
       {
         "prepareCmd": "yarn version --new-version ${nextRelease.version} --no-git-tag-version --no-commit-hooks",
-        "addChannelCmd": "yarn package",
-        "publishCmd": "yarn deploy"
+        "publishCmd": "yarn package && yarn deploy"
       }
     ],
     [
