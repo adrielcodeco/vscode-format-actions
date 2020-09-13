@@ -79,7 +79,7 @@
     "build": "ttsc -p ./tsconfig.build.json",
     "check:spelling": "cspell --config=.cspell.json \"**/*.{md,ts,js}\"",
     "commit": "git-cz",
-    "deploy": "vsce publish --yarn",
+    "deploy": "vsce publish --yarn -p ${VSCE_PAT}",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix",
     "lint:markdown:fix": "lint:markdown --fix",
