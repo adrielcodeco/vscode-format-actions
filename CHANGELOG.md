@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.4...v1.0.5) (2020-09-13)
+
+
+### Bug Fixes
+
+* publish PAT ([8435677](https://github.com/adrielcodeco/vscode-formact/commit/84356772bb40e6f78e3aa2054cb6fa43a9d3f304))
+* release artifact ([af11f60](https://github.com/adrielcodeco/vscode-formact/commit/af11f60a82e36f5e5c6246f5338bbf42e26876fc))
+
 ## [1.0.4](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.3...v1.0.4) (2020-09-13)
 
 
