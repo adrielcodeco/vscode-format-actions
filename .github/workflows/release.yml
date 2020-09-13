@@ -39,7 +39,7 @@ jobs:
 
       - name: pack
         id: pack
-        run: yarn yarn:pack
+        run: yarn package
 
       - name: semantic-release
         id: semantic-release
