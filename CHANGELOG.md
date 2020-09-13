@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.1...v1.0.2) (2020-09-13)
+
+
+### Bug Fixes
+
+* vscode engine ([9fbda19](https://github.com/adrielcodeco/vscode-formact/commit/9fbda196cb44fb3eb2dcd889e742460e024c5bfa))
+
 ## [1.0.1](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.0...v1.0.1) (2020-09-13)
 
 
