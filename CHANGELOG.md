@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.3...v1.0.4) (2020-09-13)
+
+
+### Bug Fixes
+
+* action script ([b9789ec](https://github.com/adrielcodeco/vscode-formact/commit/b9789ecb0d99aa3ac757c9790cd1ae00f0e339f3))
+* release files ([40dc081](https://github.com/adrielcodeco/vscode-formact/commit/40dc0819cf87fce7bdd3006a6bd0ff65be182025))
+
 ## [1.0.3](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.2...v1.0.3) (2020-09-13)
 
 
