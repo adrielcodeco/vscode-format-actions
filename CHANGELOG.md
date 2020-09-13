@@ -1,3 +1,13 @@
+## [1.0.3](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.2...v1.0.3) (2020-09-13)
+
+
+### Bug Fixes
+
+* dependencies ([4df4a0d](https://github.com/adrielcodeco/vscode-formact/commit/4df4a0d972af11503b8885de98c91e54abca0336))
+* pipeline ([042e345](https://github.com/adrielcodeco/vscode-formact/commit/042e345c63457b8b2c64dc078133e8815ec23d42))
+* pipeline ([a9d1491](https://github.com/adrielcodeco/vscode-formact/commit/a9d14915a16f5cc0ae8ade2e212f843a985dbe38))
+* release ([1db6235](https://github.com/adrielcodeco/vscode-formact/commit/1db623597a284c29f4fe5a84ee56389cf8bbb903))
+
 ## [1.0.2](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.1...v1.0.2) (2020-09-13)
 
 
