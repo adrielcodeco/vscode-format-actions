@@ -4,6 +4,12 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
+      "@semantic-release/exec",
+      {
+        "publishCmd": "yarn version --new-version ${nextRelease.version} --no-git-tag-version --no-commit-hooks"
+      }
+    ],
+    [
       "@semantic-release/git",
       {
         "assets": ["package.json", "CHANGELOG.md"],
@@ -13,7 +19,7 @@
     [
       "@semantic-release/github",
       {
-        "assets": "release/*.tgz"
+        "assets": "releases/*"
       }
     ]
   ]
