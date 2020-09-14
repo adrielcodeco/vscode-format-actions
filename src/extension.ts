@@ -5,43 +5,53 @@ import { ExtensionsLogging } from 'vscode-extensions-logging'
 const EXTENSION_ID = 'formact'
 const languagesConfigKey = `${EXTENSION_ID}.languages`
 const actionsConfigKey = `${EXTENSION_ID}.actions`
+const defaultFormatterKey = 'editor.defaultFormatter'
 
 export function activate (context: vscode.ExtensionContext) {
-  const logger = ExtensionsLogging.register(EXTENSION_ID)
-  const languages = vscode.workspace.getConfiguration().get<string[]>(languagesConfigKey) ?? [
-    'javascript',
-    'typescript',
-    'json',
-  ]
-  for (const language of languages) {
-    const actions = vscode.workspace
-      .getConfiguration('', { languageId: language })
-      .get<string[]>(actionsConfigKey)
-    if (actions?.length) {
-      vscode.languages.registerDocumentRangeFormattingEditProvider(language, {
-        async provideDocumentRangeFormattingEdits (): Promise<vscode.TextEdit[] | undefined> {
-          for (const action of actions) {
-            try {
-              await vscode.commands.executeCommand(action)
-            } catch (err) {
-              logger.error(err)
+  try {
+    const logger = ExtensionsLogging.register(EXTENSION_ID)
+    logger.info('initializing extension')
+    const languages = vscode.workspace.getConfiguration().get<string[]>(languagesConfigKey) ?? [
+      'javascript',
+      'typescript',
+      'json',
+    ]
+    const defaultActions = vscode.workspace.getConfiguration().get<string[]>(actionsConfigKey)
+    for (const language of languages) {
+      const actions =
+        vscode.workspace
+          .getConfiguration('', { languageId: language })
+          .get<string[]>(actionsConfigKey) ?? defaultActions
+      if (actions?.length) {
+        logger.info(`registering formatting provider for "${language}" language`)
+        vscode.languages.registerDocumentFormattingEditProvider(language, {
+          async provideDocumentFormattingEdits (): Promise<vscode.TextEdit[] | undefined> {
+            for (const action of actions) {
+              try {
+                await vscode.commands.executeCommand(action)
+              } catch (err) {
+                logger.error(err)
+              }
             }
-          }
-          return undefined
-        },
-      })
-    }
-  }
-  context.subscriptions.push(
-    vscode.workspace.onDidChangeConfiguration(e => {
-      if (
-        e.affectsConfiguration(languagesConfigKey) ||
-        languages.find(l => e.affectsConfiguration(actionsConfigKey, { languageId: l }))
-      ) {
-        reloadWindow()
+            return undefined
+          },
+        })
       }
-    }),
-  )
+    }
+    context.subscriptions.push(
+      vscode.workspace.onDidChangeConfiguration(e => {
+        if (
+          e.affectsConfiguration(languagesConfigKey) ||
+          e.affectsConfiguration(actionsConfigKey) ||
+          e.affectsConfiguration(defaultFormatterKey)
+        ) {
+          reloadWindow()
+        }
+      }),
+    )
+  } catch (err) {
+    console.log(err)
+  }
 }
 
 function reloadWindow () {
