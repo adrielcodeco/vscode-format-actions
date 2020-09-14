@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.7...v1.0.8) (2020-09-14)
+
+
+### Bug Fixes
+
+* settings bug ([d500151](https://github.com/adrielcodeco/vscode-formact/commit/d500151dd565f6fe5be5ec303d09e49e06940baa))
+
 ## [1.0.7](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.6...v1.0.7) (2020-09-13)
 
 
