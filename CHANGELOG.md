@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.8...v1.0.9) (2020-09-19)
+
+
+### Bug Fixes
+
+* budle dependecies ([4af222a](https://github.com/adrielcodeco/vscode-formact/commit/4af222ae26c132a96b26791168b9922e2c77e94a))
+
 ## [1.0.8](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.7...v1.0.8) (2020-09-14)
 
 

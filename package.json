@@ -2,7 +2,7 @@
   "name": "formact",
   "private": true,
   "displayName": "Formact - Format your code with vscode actions",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "publisher": "codeco",
   "repository": {
     "type": "git",
