@@ -18,6 +18,21 @@
   "categories": [
     "Formatters"
   ],
+  "keywords": [
+    "format",
+    "formatter",
+    "lint",
+    "linter",
+    "prettier",
+    "eslint",
+    "javascript",
+    "js",
+    "jsx",
+    "typescript",
+    "ts",
+    "tsx",
+    "json"
+  ],
   "activationEvents": [
     "*"
   ],

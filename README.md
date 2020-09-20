@@ -25,19 +25,15 @@ Edit the vscode settings to set `codeco.formact` as defaultFormatter and configu
 {
   //# for all languages
   "editor.defaultFormatter": "codeco.formact",
-  "formact.actions": ["source.format.prettier", "source.fixAll.eslint"],
+  "formact.actions": ["formact.prettier.format", "eslint.executeAutofix"],
 
   //# for specific language
   "[typescript]": {
     "editor.defaultFormatter": "codeco.formact",
-    "formact.actions": ["source.format.prettier", "source.fixAll.eslint"]
+    "formact.actions": ["formact.prettier.format", "eslint.executeAutofix"]
   }
 }
 ```
-
-In the example above, when formatting the code, the Prettier action and the Eslint action will be called in sequence.
-
-OBS.: The Eslint action is added by the `dbaeumer.vscode-eslint` extension and Prettier action is added by the `codeco.formact-prettier` extension.
 
 Also is possible configure the languages used by formact.
 
@@ -47,7 +43,13 @@ Also is possible configure the languages used by formact.
 }
 ```
 
-OBS.: `"javascript", "typescript", "json", "jsonc"` are the default languages used by formact
+In the first example above, when formatting the code, the Prettier action and the Eslint action will be called in sequence.
+
+OBS. 1: `"javascript", "typescript", "json", "jsonc"` are the default languages used by formact
+
+OBS. 2: The Eslint command is added by the `dbaeumer.vscode-eslint` extension and Prettier command is added by the `codeco.formact-prettier` extension.
+
+OBS. 3: Eslint work for default with Javascript files and Typescript if TypeScript is correctly configured inside ESLint. For Eslint command work with other languages like `json` or `jsonc` it need to be configured adding `eslint.validate` to the `.vscode/settings.json` with the languages `["javascript", "typescript", "json", "jsonc"]`
 
 ## TODO
 

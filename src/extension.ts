@@ -27,13 +27,16 @@ export function activate (context: vscode.ExtensionContext) {
         logger.info(`registering formatting provider for "${language}" language`)
         vscode.languages.registerDocumentFormattingEditProvider(language, {
           async provideDocumentFormattingEdits (): Promise<vscode.TextEdit[] | undefined> {
+            logger.info(`formatting with ${JSON.stringify(actions)} actions`)
             for (const action of actions) {
               try {
                 await vscode.commands.executeCommand(action)
+                logger.info(`action "${action}" executed`)
               } catch (err) {
                 logger.error(err)
               }
             }
+            logger.info('formatted')
             return undefined
           },
         })
@@ -50,6 +53,7 @@ export function activate (context: vscode.ExtensionContext) {
         }
       }),
     )
+    logger.info('initialized extension')
   } catch (err) {
     console.log(err)
   }
