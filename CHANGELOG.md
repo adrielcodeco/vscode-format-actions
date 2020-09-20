@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.9...v1.0.10) (2020-09-20)
+
+
+### Bug Fixes
+
+* webpack config ([e237143](https://github.com/adrielcodeco/vscode-formact/commit/e23714375dbf9e31fffa388bd6d3a0977fca6488))
+
 ## [1.0.9](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.8...v1.0.9) (2020-09-19)
 
 
