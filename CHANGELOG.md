@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/adrielcodeco/vscode-formact/compare/v1.1.0...v1.1.1) (2020-09-20)
+
+
+### Bug Fixes
+
+* readme.md ([6b773f0](https://github.com/adrielcodeco/vscode-formact/commit/6b773f09267600943ce7a31e6acf4fcc7e9a739d))
+
 # [1.1.0](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.11...v1.1.0) (2020-09-20)
 
 
