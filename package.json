@@ -36,7 +36,8 @@
             "default": [
               "javascript",
               "typescript",
-              "json"
+              "json",
+              "jsonc"
             ],
             "description": "List of languages that will accept actions",
             "scope": "window"

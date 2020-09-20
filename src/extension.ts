@@ -15,6 +15,7 @@ export function activate (context: vscode.ExtensionContext) {
       'javascript',
       'typescript',
       'json',
+      'jsonc',
     ]
     const defaultActions = vscode.workspace.getConfiguration().get<string[]>(actionsConfigKey)
     for (const language of languages) {

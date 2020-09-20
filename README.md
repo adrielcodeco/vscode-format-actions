@@ -43,11 +43,11 @@ Also is possible configure the languages used by formact.
 
 ```json
 {
-  "formact.languages": ["javascript", "typescript", "json"]
+  "formact.languages": ["javascript", "typescript", "json", "jsonc"]
 }
 ```
 
-OBS.: `"javascript", "typescript", "json"` are the default languages used by formact
+OBS.: `"javascript", "typescript", "json", "jsonc"` are the default languages used by formact
 
 ## TODO
 
