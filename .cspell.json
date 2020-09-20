@@ -7,7 +7,8 @@
     "*.d.ts",
     "**/#/**",
     "**/coverage/**",
-    "**/tests/**"
+    "**/tests/**",
+    "CHANGELOG.md"
   ],
   "dictionaries": [
     "typescript",

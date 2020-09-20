@@ -11,9 +11,13 @@ module.exports = {
   target: 'node',
   devtool: 'source-map',
   mode: 'production',
+  node: {
+    __dirname: false,
+  },
   output: {
     filename: 'extension.js',
     path: resolve(tsconfigBuild.compilerOptions.outDir),
+    libraryTarget: 'commonjs',
   },
   module: {
     rules: [
@@ -35,7 +39,9 @@ module.exports = {
     extensions: ['.ts', '.js'],
     plugins: [new TsconfigPathsPlugin({ configFile: './tsconfig.build.json' })],
   },
-  externals: [/^vscode/i],
+  externals: {
+    vscode: 'commonjs vscode',
+  },
   resolveLoader: {
     modules: [resolve('./node_modules')],
   },
