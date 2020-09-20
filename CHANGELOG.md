@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.11...v1.1.0) (2020-09-20)
+
+
+### Features
+
+* add suport to jsonc as default ([eaaf980](https://github.com/adrielcodeco/vscode-formact/commit/eaaf980e08b517321cfcbceda1e8b8e422dab673))
+
 ## [1.0.11](https://github.com/adrielcodeco/vscode-formact/compare/v1.0.10...v1.0.11) (2020-09-20)
 
 
