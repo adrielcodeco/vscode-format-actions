@@ -8,6 +8,7 @@
     "**/#/**",
     "**/coverage/**",
     "**/tests/**",
+    "README.md",
     "CHANGELOG.md"
   ],
   "dictionaries": [
@@ -20,5 +21,5 @@
     "filetypes",
     "bash"
   ],
-  "words": ["formact", "codeco", "dbaeumer", "devtool"]
+  "words": ["formact", "devtool"]
 }

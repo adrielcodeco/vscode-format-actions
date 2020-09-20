@@ -25,12 +25,12 @@ Edit the vscode settings to set `codeco.formact` as defaultFormatter and configu
 {
   //# for all languages
   "editor.defaultFormatter": "codeco.formact",
-  "formact.actions": ["source.fixAll.prettier", "source.fixAll.eslint"],
+  "formact.actions": ["source.format.prettier", "source.fixAll.eslint"],
 
   //# for specific language
   "[typescript]": {
     "editor.defaultFormatter": "codeco.formact",
-    "formact.actions": ["source.fixAll.prettier", "source.fixAll.eslint"]
+    "formact.actions": ["source.format.prettier", "source.fixAll.eslint"]
   }
 }
 ```
